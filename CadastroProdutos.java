@@ -121,7 +121,9 @@ class SistemaCadastroProdutos extends JFrame {
     }
 
     private void cadastrarProduto() {
-        if (!validarCampos(true)) return;
+        if (!validarCampos(true)) {
+            return;
+        }
 
         String nome = campoNome.getText().trim();
         double preco = Double.parseDouble(campoPreco.getText().trim());
@@ -175,7 +177,9 @@ class SistemaCadastroProdutos extends JFrame {
     }
 
     private void atualizarProduto() {
-        if (!validarCampos(true)) return;
+        if (!validarCampos(true)) {
+            return;
+        }
 
         String nome = campoNome.getText().trim();
         double preco = Double.parseDouble(campoPreco.getText().trim());
